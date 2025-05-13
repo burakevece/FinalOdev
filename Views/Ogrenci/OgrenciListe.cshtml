@@ -24,10 +24,10 @@
 
     <h3>Öğrenci Listesi-Tablo</h3>
 
-    <!-- Tablo kısmı partial view'dan gelecek -->
+ 
     @await Html.PartialAsync("_OgrenciTabloPartial", Model)
 
-    <!-- Detay Modal -->
+   
     <div class="modal fade" id="detayModal" tabindex="-1" aria-labelledby="detayModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -36,7 +36,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body" id="detayModalBody">
-                    <!-- Ajax ile doldurulacak -->
+                    
                 </div>
             </div>
         </div>
