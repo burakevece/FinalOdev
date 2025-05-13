@@ -1,6 +1,6 @@
-﻿// AJAX Form gönderimi için ortak fonksiyonlar
+﻿
 $(document).ready(function () {
-    // Form submit olaylarının yakalanması
+   
     $(document).on('submit', '.ajax-form', function (e) {
         e.preventDefault();
 
@@ -63,7 +63,7 @@ $(document).ready(function () {
                     if (response.success) {
                         showAlert('success', response.message);
 
-                        // Tablo güncellemesi
+                        
                         if (response.updateTable) {
                             $('#ogrenciTablosu').html(response.tableHtml);
                         }
